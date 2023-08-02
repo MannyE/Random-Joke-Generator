@@ -24,7 +24,7 @@ body {
     border: 1px black solid;
     border-radius: 4vw;
     width: 95vw;
-    height: 35vh;
+    min-height: 35vh;
     text-align: center;
     max-width: 400px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -37,25 +37,25 @@ body {
     letter-spacing: 2px;
   }
 
-  p {
+  #joke {
      font-size: 8vw;
      font-weight: 500;
      margin-top: 12vw;
   }
 
-  button {
+  #joke-button {
     background-color: #9f68e0;
     color: #fff;
     border: 0;
     border-radius: 2vw;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
     padding: 3vw 6vw;
-    font-size: 5vw;
+    font-size: 4vw;
     cursor: pointer;
     display: block;
     position: relative;
     margin: auto;
-    top: 4vw;
+    top: 2vw;
   }
 }
 
@@ -64,7 +64,6 @@ body {
     box-sizing: border-box;
     background-color: white;
     width: 30vw;
-    height: 20vw;
     min-width: 400px;
     min-height: 300px;
     text-align: center;
@@ -82,12 +81,12 @@ body {
     margin-bottom: 3vw;
   }
 
-  p {
+  #joke {
      font-size: 2vw;
      font-weight: 500;
   }
 
-  button {
+  #joke-button {
     background-color: #9f68e0;
     color: #fff;
     border: 0;
