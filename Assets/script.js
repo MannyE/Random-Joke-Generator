@@ -34,4 +34,4 @@ jokeButton.addEventListener('click', getJoke);
 
 // Start Joke
 
-setTimeout (getJoke, 2000);
+setTimeout (getJoke, 1000);
