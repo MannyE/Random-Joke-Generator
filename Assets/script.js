@@ -31,3 +31,7 @@ function getJoke () {
 
 // Event Listeners
 jokeButton.addEventListener('click', getJoke);
+
+// Start Joke
+
+setTimeout (getJoke, 2000);
