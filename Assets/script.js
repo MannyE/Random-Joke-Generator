@@ -14,15 +14,15 @@ function getJoke () {
 
     jokeRequest.onreadystatechange = function () {
         if (this.readyState === 4) {
-            const jok = "";            
+            let joke = "";            
             
             if (this.status === 200) {
-                joke = JSON.parse(jokeRequest.responseText);
+                joke = JSON.parse(jokeRequest.responseText).value;
             }
             else {
                 joke = "Something went wrong (not funny)"
             }
-            jokeOutput.innerText = joke.value;
+            jokeOutput.innerText = joke;
         }
         
     }
