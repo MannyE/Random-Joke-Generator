@@ -1,4 +1,5 @@
 # Random Joke Generator
 
-Created a responsive web app to display chuck norris joke
-Credits: API Rertieved from https://api.chucknorris.io/
+Desc: Created a responsive web app to display chuck norris jokes
+Technologies: HTML, CSS, JavaScript
+Credits: API Used -  https://api.chucknorris.io/
