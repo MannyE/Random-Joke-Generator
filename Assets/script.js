@@ -1,37 +1,24 @@
-// Varibale Definition
+// HTML Elements
+const jokeButton = document.getElementById("joke-button");
 
-const jokeOutput = document.querySelector('#joke');
-const jokeButton = document.querySelector('#joke-button');
+function getJoke(e) {
+  const request = new XMLHttpRequest();
+  request.open("Get", "https://api.chucknorris.io/jokes/random");
+  request.onreadystatechange = function () {
+    if (request.status === 200 && request.readyState === 4) {
+      const response = JSON.parse(request.responseText);
 
-// Methods
-function getJoke () {
-    console.log('In Get Joke');
-    jokeRequest = new XMLHttpRequest();
-    jokeRequest.open('GET','https://api.chucknorris.io/jokes/random');
-    jokeRequest.send();
+      let paragraph = document.getElementsByTagName("p")[0];
 
-    console.log(jokeRequest);
-
-    jokeRequest.onreadystatechange = function () {
-        if (this.readyState === 4) {
-            let joke = "";            
-            
-            if (this.status === 200) {
-                joke = JSON.parse(jokeRequest.responseText).value;
-            }
-            else {
-                joke = "Something went wrong (not funny)"
-            }
-            jokeOutput.innerText = joke;
-        }
-        
+      console.log(response.value);
+      paragraph.textContent = response.value;
     }
+  };
+
+  request.send();
 }
 
-
 // Event Listeners
-jokeButton.addEventListener('click', getJoke);
+jokeButton.addEventListener("click", getJoke);
 
-// Start Joke
-
-setTimeout (getJoke, 1000);
+setTimeout(getJoke, 1000);
