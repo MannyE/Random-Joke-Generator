@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #FF7276;
-  font-family: 'Roboto', sans-serif;
+  background-color: #ff7276;
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,61 +17,51 @@ body {
   padding: 20px;
 }
 
-@media screen and (max-width: 480px) {
-
-  .container {
-    background-color: white;
-    border: 1px black solid;
-    border-radius: 4vw;
-    width: 80vw;
-    min-height: 35vh;
-    text-align: center;
-    max-width: 400px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-    padding: 10vw 5vw;
-  }
-  
-  h1 {
-    margin-top: 4vw;
-    font-size: 6vw;
-    color: gray;
-    letter-spacing: 2px;
-  }
-
-  #joke {
-     font-size: 6vw;
-     font-weight: 500;
-     margin-top: 12vw;
-  }
-
-  #joke-button {
-    background-color: #9f68e0;
-    color: #fff;
-    border: 0;
-    border-radius: 2vw;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-    padding: 3vw 6vw;
-    font-size: 4vw;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-  }
+.container {
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 4vw;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 10vw 5vw;
 }
 
-@media screen and (min-width: 491px) and (max-width: 1024px) {
+h1 {
+  margin-top: 4vw;
+  font-size: 6vw;
+  color: gray;
+  letter-spacing: 2px;
+}
 
+#joke {
+  font-size: 6vw;
+  font-weight: 500;
+  margin-top: 12vw;
+}
+
+#joke-button {
+  background-color: #9f68e0;
+  color: #fff;
+  border: 0;
+  border-radius: 2vw;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 3vw 6vw;
+  font-size: 4vw;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (min-width: 491px) and (max-width: 1200px) and (orientation: portrait) {
   .container {
-    background-color: white;
-    border: 1px black solid;
-    border-radius: 4vw;
-    width: 80vw;
+    width: 85vw;
     min-width: 480px;
-    min-height: 50vw;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-    padding: 10vw 5vw;
+    max-width: 90%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
   }
-  
+
   h1 {
     margin-top: 2vw;
     font-size: 3vw;
@@ -80,9 +70,9 @@ body {
   }
 
   #joke {
-     font-size: 4vw;
-     font-weight: 500;
-     margin-top: 2vw;
+    font-size: 4vw;
+    font-weight: 500;
+    margin-top: 2vw;
   }
 
   #joke-button {
@@ -99,13 +89,9 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 491px) and (orientation: landscape) {
   .container {
-    box-sizing: border-box;
-    background-color: white;
-    width: 30vw;
-    min-width: 400px;
-    min-height: 300px;
+    min-width: 70vw;
     text-align: center;
     border-radius: 1vw;
     border: 0;
@@ -115,29 +101,21 @@ body {
   }
 
   h1 {
-    font-size: 1.3vw;
+    font-size: 4vw;
     color: gray;
     letter-spacing: 2px;
-    margin-bottom: 3vw;
   }
 
   #joke {
-     font-size: 2vw;
-     font-weight: 500;
+    font-size: 3vw;
+    font-weight: 500;
+    margin-top: 2vw;
+    line-height: 4vw;
   }
 
   #joke-button {
-    background-color: #9f68e0;
-    color: #fff;
-    border: 0;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
     padding: 1vw 2.5vw;
-    font-size: 1vw;
-    cursor: pointer;
-    display: block;
-    position: relative;
-    margin: auto;
+    font-size: 2vw;
     top: 1.5vw;
   }
 }
